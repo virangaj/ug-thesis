@@ -1,0 +1,67 @@
+\documentclass{uopThesis}
+
+
+
+\usepackage[authoryear,comma]{natbib}
+
+
+
+\title{Thesis title}
+
+%% The full name of the author
+\author{ Student Name }
+%% The full name of your supervisor
+\supervisor {Supervisor name }
+
+\dept{Department of Statistics and Computer Science}
+
+\university{University of Peradeniya}
+
+\degree{Your degree program}%% BSc.(Hons) in Computer Science
+
+
+\begin{document}
+	
+\maketitle 
+\frontmatter
+ \include{abstract.tex}
+ \addcontentsline{toc}{chapter}{ABSTRACT}
+ 
+ \include{declaration.tex}
+ \addcontentsline{toc}{chapter}{DECLARATION}
+ 
+ \include{acknowledgements.tex}
+ \addcontentsline{toc}{chapter}{ACKNOWLEDGEMENT} 
+
+\addcontentsline{toc}{chapter}{TABLE OF CONTENTS}
+
+\addcontentsline{toc}{chapter}{LIST OF FIGURES}
+
+\addcontentsline{toc}{chapter}{LIST OF TABLES}
+
+\tableofcontents
+
+\cleardoublepage
+\listoftables
+\cleardoublepage
+\listoffigures
+\mainmatter
+\doublespacing
+
+% add chapters here
+\include{chapters/Introduction.tex}
+\include{chapters/literature_review.tex}
+\input{chapters/methodology.tex}
+\include{chapters/results_and_discussion.tex}
+\include{chapters/conclusion}
+
+
+%\bibliographystyle{apalike}
+%\bibliographystyle{unsrt} % Use for unsorted references  
+%\bibliographystyle{plainnat} % use this to have URLs listed in References
+ 
+\cleardoublepage
+\bibliographystyle{apalike}%apalike}%agsm} 
+\bibliography{References.bib}   % Path to your References.bib file	
+	
+\end{document}
